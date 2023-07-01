@@ -8,11 +8,8 @@ const[email,setEmail]=useState('')
 const[mobile,setMobile]=useState('')
 const[checkbox,setCheckbox]=useState(false)
 
-    localStorage.setItem('name',name)
-    localStorage.setItem('username',username)
-    localStorage.setItem('email',email)
-    localStorage.setItem('mobile',mobile)
-  
+    
+
 
 const handleClick=(e)=>{
 e.preventDefault()
@@ -21,7 +18,13 @@ if(name.length===0 || username.length===0 || email.length===0 || mobile.length==
 }
 else{
     setError(false)
+    
 }
+localStorage.setItem('name',name)
+localStorage.setItem('username',username)
+localStorage.setItem('email',email)
+localStorage.setItem('mobile',mobile)
+localStorage.removeItem('form')
 }
 
 const handleCheck=(e)=>{
@@ -74,7 +77,7 @@ e.preventDefault()
 
 
             <div className="button">
-            <button onChange={()=>handleClick}>SIGN UP</button>
+            <button onClick={handleClick}>SIGN UP</button>
             </div>
 
             <span className='span3'>By clicking on Sign up. you agree to Superapp <strong>Terms and Conditions of Use</strong></span>
