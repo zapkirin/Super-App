@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import './Registration.css'
+import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 function Registration() {
     const[error,setError]=useState(true)
 const[name,setName]=useState('')
@@ -76,9 +78,12 @@ e.preventDefault()
             </div>
 
 
+                <Link to='/category'>
             <div className="button">
-            <button onClick={handleClick}>SIGN UP</button>
+           <button onClick={handleClick}>SIGN UP</button>
             </div>
+                </Link>
+
 
             <span className='span3'>By clicking on Sign up. you agree to Superapp <strong>Terms and Conditions of Use</strong></span>
             <div className="tnc">

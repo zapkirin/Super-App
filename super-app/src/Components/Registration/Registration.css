@@ -16,7 +16,7 @@ flex-direction: row;
     color: white;
 }
 .box1>img{
-    height: 105vh;
+    height: 110vh;
     width: 48vw;
 }
 .desc{
@@ -34,7 +34,7 @@ margin-left: 20px;
 }
 .box2{
     width: 52vw;
-    height: 105vh;
+    height: 110vh;
     color: white;
     background-color: black;
     display: flex;
