@@ -98,7 +98,7 @@ function Category() {
             </div>
             
         </div>
-        <Link to='/'>
+        <Link to='/profile'>
         <button className='categButton'>Next Page </button>
 
         </Link>
